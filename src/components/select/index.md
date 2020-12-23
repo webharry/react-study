@@ -9,7 +9,7 @@
 ## 知识点拓展
 1、react中的refs
 官方文档：[Refs & DOM](https://zh-hans.reactjs.org/docs/refs-and-the-dom.html)中说，refs提供一种方式，允许我们访问DOM节点或在render方法中创建的React元素。
-* refs通过**React.createRef()**创建,例如：this.selectBox = React.createRef();
+* refs通过 **React.createRef()** 创建,例如：this.selectBox = React.createRef();
 * 通过**ref**属性附加到react元素。
 * 访问react元素时，通过this.selectBox的current属性获取引用节点。
 ```js

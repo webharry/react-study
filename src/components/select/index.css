@@ -1,4 +1,4 @@
-.select-box {
+.select_box {
     width: 50%;
     height: 50px;
     display: flex;
@@ -12,11 +12,11 @@
     flex: 1;
     height: 100%;
 }
-.select-label {
+.select_label {
     margin-right: 10px;
     color: #333;
 }
-.select-input {
+.select_input {
     width: 100%;
     box-sizing: border-box;
     outline: none;
@@ -34,7 +34,7 @@
     background-image: none;
     transition: border-color .2s cubic-bezier(.645,.045,.355,1);
 }
-.select-option {
+.select_option {
     position: absolute;
     top: 40px;
     left: 0;
@@ -51,7 +51,7 @@
     padding: 6px 0;
     z-index: 1001;
 }
-.option-item {
+.option_item {
     text-align: left;
     font-size: 14px;
     padding: 0 20px;
@@ -63,10 +63,10 @@
     line-height: 34px;
     cursor: pointer;
 }
-.option-item:hover {
+.option_item:hover {
     background-color: #f5f7fa;
 }
-.hidden-option {
+.hidden_option {
     /* opacity: 0; */
     display: none;
 }

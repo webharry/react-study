@@ -1,50 +1,32 @@
 import React, { Fragment } from 'react';
-import './App.css';
-import Select from './components/select/index';
+import styles from './App.css';
+import  { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import List from './pages/List';
+import Sider from './components/sider/index';
 
 class App extends React.Component {
     constructor() {
         super()
         this.state = {
-            options:[
-                {
-                    label:'option1',
-                    value:1
-                },
-                {
-                    label:'option2',
-                    value:2
-                },
-                {
-                    label:'option3',
-                    value:3
-                },
-                {
-                    label:'option4',
-                    value:4
-                },
-                {
-                    label:'option5',
-                    value:5
-                },
-                {
-                    label:'option6',
-                    value:6
-                }
-            ],
-            labelName:'选择器名称',
-            placeholder: '请选择'
+            
         }
     }
 
-    onSelectChange = (val) => {
-        console.log(val);
-    }
-
     render(h) {
-        const { labelName, options, placeholder } = this.state;
+        
         return (
-            <Select labelName={labelName} options={options} placeholder={placeholder} onChange={this.onSelectChange}></Select>
+            <Fragment>
+                <div className={styles.container}>
+                   <Router>
+                    <Sider/>
+                    <div className={styles.content}>
+                        <Route path="/home" component= { Home }></Route>
+                        <Route path="/list" component= { List }></Route>
+                    </div>
+                    </Router>
+                </div>
+            </Fragment>
         );
     }
 }

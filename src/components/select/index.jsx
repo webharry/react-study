@@ -1,5 +1,5 @@
 import React,{ Component } from "react";
-import "./index.css";
+import styles from "./index.css";
 import cx from "classnames";
 
 class Select extends Component {
@@ -50,12 +50,12 @@ class Select extends Component {
         const { value, isHidden } = this.state;
         const { labelName, placeholder, options } = this.props;
         return (
-            <div className="select-box" ref={this.selectBox}>
-                {labelName && <label className="select-label">{labelName}:</label>}
-                <div className="select">
-                    <input className="select-input" type="text" value={value} placeholder={placeholder} onClick={this.onClickHandle} readOnly></input>
+            <div className={styles.select_box} ref={this.selectBox}>
+                {labelName && <label className={styles.select_label}>{labelName}:</label>}
+                <div className={styles.select}>
+                    <input className={styles.select_input} type="text" value={value} placeholder={placeholder} onClick={this.onClickHandle} readOnly></input>
                     <div 
-                        className="select-option"
+                        className={styles.select_option}
                         className={cx({
                             "select-option": true,
                             "hidden-option": isHidden
@@ -65,7 +65,7 @@ class Select extends Component {
                             options.map((item) => {
                                 return (
                                     <div 
-                                        className="option-item"
+                                        className={styles.option_item}
                                         onClick={this.clickChange.bind(this,item)} 
                                         key={item.value}
                                     >
