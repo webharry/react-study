@@ -12,10 +12,13 @@ class Sider extends React.Component {
             <div className={styles.sidebar}>
                 <ul>
                     <li>
-                        <Link to="/home">home页面</Link>
+                        <Link to="/">home页面</Link>
                     </li>
                     <li>
                         <Link to="/list">list页面</Link>
+                    </li>
+                    <li>
+                        <Link to="/list/content">内容页面</Link>
                     </li>
                 </ul>
             </div>

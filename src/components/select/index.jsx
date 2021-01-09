@@ -57,8 +57,8 @@ class Select extends Component {
                     <div 
                         className={styles.select_option}
                         className={cx({
-                            "select-option": true,
-                            "hidden-option": isHidden
+                            [`${styles.select_option}`]: true,
+                            [`${styles.hidden_option}`]: isHidden
                         })}
                     >
                         {options && 
