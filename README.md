@@ -5,3 +5,4 @@
 - [react入门篇](https://github.com/webharry/react-study/blob/main/src/pages/HolleWorld/index.md)
 - [react自定义select组件](./src/components/select/index.md)
 - [react生命周期和钩子函数](https://github.com/webharry/react-study/blob/main/src/pages/lifecycle/inndex.md)
+- [组件拆分&代码优化](https://github.com/webharry/react-study/blob/main/src/pages/%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/index.md)
