@@ -28,7 +28,7 @@ this.setState({
 3、state的更新可能是异步的，出于性能考虑，React会把多个setState（）调用合并成一个调用。
 因为this.props 和 this.state 可能会异步更新，所以你不要依赖他们的值来更新下一个状态。解决办法是传递一个函数：
 ```js
-this.setState((state,props) => {
+this.setState((state,props) => ({
   count: state.count + props.increment
-})
+}))
 ```
