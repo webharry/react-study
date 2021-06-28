@@ -20,6 +20,9 @@ class Sider extends React.Component {
                     <li>
                         <Link to="/list/content">内容页面</Link>
                     </li>
+                    <li>
+                        <Link to="/popup-dialg">popupDialog弹窗</Link>
+                    </li>
                 </ul>
             </div>
         )

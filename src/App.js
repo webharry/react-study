@@ -8,6 +8,7 @@ import Content from './pages/content';
 import Notfind from './pages/NotFind';
 import HooksDemo from './pages/HooksDemo';
 import HooksTest from './pages/HooksTest';
+import PopupDialogDemo from './pages/PopupDialogDemo';
 
 class App extends React.Component {
     constructor() {
@@ -31,6 +32,7 @@ class App extends React.Component {
                             <Route exact path="/test" component= { HooksTest }></Route>
                             <Route strict exact={true} path="/list" component= { List }></Route>
                             <Route strict exact path="/list/content" component= { Content }></Route>
+                            <Route exact path="/popup-dialg" component={ PopupDialogDemo }></Route>
                             <Route component={ Notfind }></Route>
                         </Switch>
                     </div>
