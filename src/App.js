@@ -6,6 +6,8 @@ import List from './pages/List';
 import Sider from './components/sider/index';
 import Content from './pages/content';
 import Notfind from './pages/NotFind';
+import HooksDemo from './pages/HooksDemo';
+import HooksTest from './pages/HooksTest';
 
 class App extends React.Component {
     constructor() {
@@ -25,6 +27,8 @@ class App extends React.Component {
                     <div className={styles.content}>
                         <Switch>
                             <Route exact path="/" component= { Home }></Route>
+                            <Route exact path="/hooks" component= { HooksDemo }></Route>
+                            <Route exact path="/test" component= { HooksTest }></Route>
                             <Route strict exact={true} path="/list" component= { List }></Route>
                             <Route strict exact path="/list/content" component= { Content }></Route>
                             <Route component={ Notfind }></Route>
